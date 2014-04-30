@@ -1,0 +1,18 @@
+[Mon Mar 10 15:45:49.286665 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP Fatal error:  Class 'App\\Modules\\Service\\ServiceServiceProvider' not found in /var/www/sms/source/vendor/creolab/laravel-modules/src/Module.php on line 180
+[Mon Mar 10 15:45:49.286707 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP Stack trace:
+[Mon Mar 10 15:45:49.286719 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   1. {main}() /var/www/sms/source/public/index.php:0
+[Mon Mar 10 15:45:49.286728 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   2. Illuminate\\Foundation\\Application->run() /var/www/sms/source/public/index.php:49
+[Mon Mar 10 15:45:49.286737 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   3. Stack\\StackedHttpKernel->handle() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:606
+[Mon Mar 10 15:45:49.286746 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   4. Illuminate\\Cookie\\Guard->handle() /var/www/sms/source/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[Mon Mar 10 15:45:49.286754 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   5. Illuminate\\Cookie\\Queue->handle() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php:51
+[Mon Mar 10 15:45:49.286763 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   6. Illuminate\\Session\\Middleware->handle() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php:47
+[Mon Mar 10 15:45:49.286771 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   7. Illuminate\\Http\\FrameGuard->handle() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Session/Middleware.php:72
+[Mon Mar 10 15:45:49.286780 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   8. Illuminate\\Foundation\\Application->handle() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Http/FrameGuard.php:38
+[Mon Mar 10 15:45:49.286789 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP   9. Illuminate\\Foundation\\Application->boot() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:706
+[Mon Mar 10 15:45:49.286797 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  10. array_walk() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:550
+[Mon Mar 10 15:45:49.286806 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  11. Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:550
+[Mon Mar 10 15:45:49.286815 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  12. Creolab\\LaravelModules\\ServiceProvider->boot() /var/www/sms/source/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:550
+[Mon Mar 10 15:45:49.286823 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  13. Creolab\\LaravelModules\\Finder->register() /var/www/sms/source/vendor/creolab/laravel-modules/src/ServiceProvider.php:28
+[Mon Mar 10 15:45:49.286832 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  14. Creolab\\LaravelModules\\ModuleCollection->registerModules() /var/www/sms/source/vendor/creolab/laravel-modules/src/Finder.php:190
+[Mon Mar 10 15:45:49.286895 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  15. Creolab\\LaravelModules\\Module->register() /var/www/sms/source/vendor/creolab/laravel-modules/src/ModuleCollection.php:48
+[Mon Mar 10 15:45:49.286907 2014] [:error] [pid 17605] [client 190.117.225.3:51332] PHP  16. Creolab\\LaravelModules\\Module->registerProviders() /var/www/sms/source/vendor/creolab/laravel-modules/src/Module.php:142

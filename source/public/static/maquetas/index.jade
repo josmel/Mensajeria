@@ -1,0 +1,23 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	.content-login
+		img(class="login-logo",src="img/bymway.png")
+		.login-panel.frm-panel
+			form(action="bienvenida.html",method="POST")
+				.frm-head
+					h2
+						span
+						| Ingresa a tu Cuenta
+				.control-group
+					label(class="control-label",for="txtUsername") Username
+					.controls
+						input(type="text",id="txtUsername",name="txtUsername")
+				.control-group
+					label(class="control-label",for="txtPassword") Password
+					.controls
+						input(type="text",id="txtPassword",name="txtPassword")
+				.control-group.last
+					.control
+						button.btn-admin(type="submit") Ingresa
+	include jade/include/footer.jade

@@ -1,0 +1,37 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Perfil
+			.frm-panel
+				form
+					.control-group
+						label(class="control-label") Nombre
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label") Usuario
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label") Contraseña
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label") Email
+						.controls
+							input(type="text")
+					.control-group
+						.control
+							button(type="button",class="btn-admin") Guardar
+	include jade/include/footer.jade

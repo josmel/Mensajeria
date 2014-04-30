@@ -1,0 +1,25 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Dashboard
+			.row-well
+				p Bienvenido admin, que operación desea realizar:
+				ul.list-opt
+					li
+						a(title="Envío SMS",href="javascript:;") Envío SMS
+					li
+						a(title="Aprovisionar",href="javascript:;") Aprovisionar
+					li
+						a(title="Reportes",href="javascript:;") Reportes
+	include jade/include/footer.jade

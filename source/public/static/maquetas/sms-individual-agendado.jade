@@ -1,0 +1,33 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Envío de SMS - Individual Agendado
+			.frm-panel
+				form
+					.control-group
+						label(class="control-label") Celular
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label") Fecha de Despacho
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label") Mensaje
+						.controls
+							textarea
+					.control-group.last
+						.control
+							button(type="submit",class="btn-admin") Enviar
+	include jade/include/footer.jade

@@ -1,0 +1,71 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Gestión - Reporte por Detalle
+			.frm-panel
+				form
+					.frm-head
+						h2
+							span.icTable
+							| Reporte por Detalle
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Desde
+							.controls
+								input(type="text")
+						.control-group
+							label(class="control-label") Hasta
+							.controls
+								input(type="text")
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Celular
+							.controls
+								input(type="text")
+						.control-group
+							label(class="control-label") Estado
+							.controls
+								select(class="select-large")
+									option Todos
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Operador
+							.controls
+								select(class="select-large")
+									option Todos
+						.control-group
+							label(class="control-label") Tipo de Ingreso
+							.controls
+								select(class="select-large")
+									option Todos
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Usuarios
+							.controls
+								select(class="select-large")
+									option Todos
+						.control-group
+							.controls
+								button(type="button",class="btn-admin") Buscar
+					table(cellspacing="0",cellpadding="0",border="0",id="datatable",class="display")
+						thead
+							tr
+								th Fecha
+								th Móvil
+								th Estado
+								th Operador
+								th Tipo de Ingreso
+								th Total
+						tbody
+	include jade/include/footer.jade

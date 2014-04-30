@@ -1,0 +1,33 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Aprovisionar - Grupos
+			.frm-panel
+				form
+					.frm-head
+						h2
+							span.icTable
+							| Listado de Grupos
+						a(href="aprovisionar-crear-grupo.html",title="Agregar Nuevo",class="btn-admin") Agregar Nuevo
+					table(cellspacing="0",cellpadding="0",border="0",id="datatable",class="display")
+						thead
+							tr
+								th id
+								th Nombre
+								th Usuarios
+								th Creado por
+								th Fecha
+								th Acciones
+						tbody
+	include jade/include/footer.jade

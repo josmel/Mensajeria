@@ -1,0 +1,64 @@
+{
+	"compile":{
+		"ext":".styl",
+		"cmd":"stylus -c",
+		"cmdr":"-o",
+		"route":"../source/public/static/css/"
+	},
+	"layouts":{
+		"active":false
+	},
+	"views":{
+		"path":"./views",
+		"pathCompile":"./views",
+		"compile":{
+			"admin.styl":{
+				"helpers":{
+					"reset":"[@pp]reset.styl",
+					"content":"content.styl",
+					"buttons":"buttons.styl",
+					"forms":"forms.styl",
+					"resources":"resources.styl",
+					"plugins":["[@ult]uTipsy.styl","[@ult]uLoader.styl","[@ult]uTipsy.styl","[@ult]jqDataTable.styl","[@ult]jqUI.styl"]
+				},
+				"includes":{
+					"layout":["[@pp]header.styl","[@pp]general.styl","[@pp]footer.styl"],
+					"imports":["login.styl"]
+				}
+			}
+		}
+	},
+	"vars":{
+		"global":{
+			"styfluxFonts":"[@url]fonts/",
+			"routImgFancybox":"[@url]../img/fancybox/",
+			"routImgTipsy":"[@url]../img/",
+			"routImgLoader":"[@url]../img/"
+		},
+		"admin.styl":{
+			"routImg":"[@url]../img/",
+			"family1":"Arial,sans-serif",
+			"family2":"'Cuprum',Arial,sans-serif",
+			"gradientInit":"#16925C",
+			"gradientFinish":"#16925C",
+			"borderBtn":"#16925C",
+			"icLogin":"-14px 0",
+			"icLogout":"-36px 0",
+			"alistOption":"-394px 0",
+			"icDashboard":"-47px 0",
+			"icProduct":"-61px 0",
+			"icPromotion":"-75px 0",
+			"icTable":"-89px 0",
+			"icEdit":"-103px 0",
+			"icDelete":"-119px 0",
+			"icPerfil":"-151px 0",
+			"icYoutube":"-162px 0",
+			"aicClose":"-176px 0",
+			"icFile":"-198px 0"
+		}
+	},
+	"ignore":{
+		"layouts":["render"],
+		"views":["admin/vhelpers","admin/layout","admin/imports"]
+	}
+}

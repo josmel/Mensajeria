@@ -1,0 +1,51 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Aprovisionar - Usuarios
+			.frm-panel
+				form
+					.frm-head
+						h2
+							span.icTable
+							| Listado de Usuarios
+						a(href="aprovisionar-crear-usuario.html",title="Agregar Nuevo",class="btn-admin") Agregar Nuevo
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Nombre
+							.controls
+								input(type="text")
+						.control-group
+							label(class="control-label") Apellido
+							.controls
+								input(type="text")
+					.cgroup-inline
+						.control-group
+							label(class="control-label") Celular
+							.controls
+								input(type="text")
+						.control-group
+							.controls
+								button(type="button",class="btn-admin") Buscar
+					table(cellspacing="0",cellpadding="0",border="0",id="datatable",class="display")
+						thead
+							tr
+								th Móvil
+								th Operador
+								th Nombre
+								th Apellido
+								th Creado por
+								th Fecha
+								th Acciones
+						tbody
+	include jade/include/footer.jade

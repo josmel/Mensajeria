@@ -1,0 +1,34 @@
+include jade/vars.jade
+include jade/head.jade
+body
+	include jade/include/header.jade
+	#wrapper
+		.ctn-head.row
+			img(class="side-logo",src="img/logo.png")
+			ul.middleNav
+				li
+					span.head-info
+						span.count 578
+						span.desc Créditos
+		include jade/include/sidebar.jade
+		.container
+			h3.admin-title Aprovisionar - Crear Grupo
+			.frm-panel
+				form
+					.control-group
+						label(class="control-label") Nombre
+						.controls
+							input(type="text")
+					.control-group
+						label(class="control-label ctrl-txt") ¿Asociar Grupo?
+						.controls
+							label(class="ioption")
+								input(type="radio",name="radio")
+								| Si
+							label(class="ioption")
+								input(type="radio",checked="checked",name="radio")
+								| No
+					.control-group.last
+						.control
+							button(type="button",class="btn-admin") Crear Grupo
+	include jade/include/footer.jade
